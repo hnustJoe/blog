@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="AsyncSocket 详细介绍（附带粘包解析)">
+    <meta name="keywords" content="AsyncSocket 详细介绍（附带粘包解析)">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -30,7 +32,12 @@
 
 
     <div class="blogContent">
-        <h1>AsyncSocket 详细介绍（附带粘包解析</h1>
+        <h1>AsyncSocket 详细介绍（附带粘包解析)</h1>
+        <p>项目也完成的差不多了，今天来梳理一下AsyncSocket这个框架的一些使用和应该注意的东西。
+            公司是做儿童手表的，app要通过服务器来与手表端进行数据交流，在使用即使通信这块，本来打算用xmpp的，
+            后面跟服务器端一起沟通后，就直接用了AsyncSocket ＋ protobuf来与服务器进行数据的交换。关于protobuf的介绍，
+            会在下一篇博客中介绍到。</p>
+
         <p>项目也完成的差不多了，今天来梳理一下AsyncSocket这个框架的一些使用和应该注意的东西。
             公司是做儿童手表的，app要通过服务器来与手表端进行数据交流，在使用即使通信这块，本来打算用xmpp的，
             后面跟服务器端一起沟通后，就直接用了AsyncSocket ＋ protobuf来与服务器进行数据的交换。关于protobuf的介绍，
